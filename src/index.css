@@ -1,0 +1,18 @@
+@tailwind base;
+
+@layer base {
+    h1 {
+        @apply p-1 text-left;
+    }
+    h3 {
+        @apply p-1 text-left;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.full-bleed {
+    box-shadow: 0 0 0 100vmax #2f2f21;
+    clip-path: inset(0 -100vmax);
+}
