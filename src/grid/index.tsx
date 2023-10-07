@@ -5,7 +5,7 @@ export const GridBox = ({
   options: string[];
   border?: string;
 }) => (
-  <div className="grid grid-cols-5 gap-2 w-48 p-2">
+  <div className="grid w-48 grid-cols-5 gap-2 p-2">
     {options.map((o, i) => (
       <div className={`${border}`} key={i}>
         {o}

@@ -6,13 +6,9 @@ export const CodeMatrix = () => {
   const options = generateOptions(25);
 
   return (
-    <div className="border border-cp-border rounded-tl-lg">
-      <div className="pl-2 flex border-b border-cp-border bg-cp-yellow text-cp-border items-center rounded-tl-md">
-        <img
-          style={{ height: 25, width: 25 }}
-          src={icon}
-          alt="Code matrix logo"
-        />
+    <div className="rounded-tl-lg border border-cp-border">
+      <div className="flex items-center rounded-tl-md border-b border-cp-border bg-cp-yellow pl-2 text-cp-border">
+        <img className="h-6 w-6" src={icon} alt="Code matrix logo" />
         <h3 className="grow py-0">CODE MATRIX</h3>
       </div>
       <div className="flex justify-center font-medium">
