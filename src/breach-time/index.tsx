@@ -1,7 +1,7 @@
 export const BreachTime = () => (
   <div>
     <div className="border-b border-cp-yellow border-opacity-25 text-left text-[4px] uppercase leading-[0.3rem] text-cp-yellow">
-      <span>
+      <span className="opacity-75">
         socket pixel street deficiency chip fiberglass 原宿 beam run nexus
         arcology. agency silver code
       </span>

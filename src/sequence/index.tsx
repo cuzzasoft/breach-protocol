@@ -5,6 +5,7 @@ import expert from './expert.png';
 import { GridBox } from '../grid';
 import { generateOptions } from '../options';
 import { HTMLProps } from 'react';
+import { MiniParagraph } from '../components';
 
 const Upload = ({
   size,
@@ -33,7 +34,7 @@ const Upload = ({
 
 export const Sequence = () => (
   <div className="relative rounded-tl-lg border border-cp-border">
-    <div className="flex flex-grow items-center border-b border-cp-border pl-2">
+    <div className="flex flex-grow items-center border-b border-cp-border pl-2 pt-1">
       <div className="flex w-1/2">
         <img className="h-6 w-6" src={icon} alt="Sequence logo" />
         <h3 className="py-0 uppercase">Sequence required to upload</h3>
@@ -42,15 +43,7 @@ export const Sequence = () => (
         <span className="text-right">Spacial jack</span>
         <span className="inline-block text-left indent-2">Harajuku</span>
       </div>
-      <div className="flex w-1/4 self-end pb-0.5 text-left text-[3px] uppercase leading-[0.2rem]">
-        <div className="w-1/2"></div>
-        <div className="w-1/2">
-          <p>Polycarbon cabal</p>
-          <p>jockey edge fieldstrip</p>
-          <p>hardwired</p>
-          <p>silverhands silver</p>
-        </div>
-      </div>
+      <MiniParagraph />
     </div>
     <Upload
       size={2}
