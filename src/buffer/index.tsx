@@ -18,9 +18,11 @@ export const Buffer = () => {
 
 export const BufferHeading = () => (
   <div>
-    <div className="pt-0.5 text-left text-[4px] font-bold leading-[0.3rem]">
+    <div className="pt-0.5 text-left text-[4px] font-bold uppercase leading-[0.3rem]">
       原 pixel multinational orbital prosthetic ice chrome cop circuitry 宿
     </div>
-    <h1 className="p-0 font-medium uppercase leading-[1.2rem]">Buffer</h1>
+    <h1 className="pb-0 pt-0.5 font-medium uppercase leading-[1.2rem]">
+      Buffer
+    </h1>
   </div>
 );

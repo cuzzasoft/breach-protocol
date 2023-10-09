@@ -5,7 +5,7 @@ import expert from './expert.png';
 import { GridBox } from '../grid';
 import { generateOptions } from '../options';
 import { HTMLProps } from 'react';
-import { FancyBarText, MiniParagraph } from '../components';
+import { FancyBarText, MiniParagraph, YakuzaText } from '../components';
 
 const Upload = ({
   size,
@@ -46,19 +46,12 @@ const Header = () => (
   </div>
 );
 
-export const Footer = () => (
-  <div className="flex text-[4px] uppercase leading-[0.3rem] text-cp-yellow">
-    <div className="w-1/2 pt-1 text-left">
-      <p>
-        Crack infrastructure fletcher construct précis socket hypnagogic trodes
-      </p>
-      <p>
-        implant chip deck Yakuza. Graphic cybernetic arcology circuitry fletcher
-        consortium
-      </p>
-      <p>corporate-grade flatline</p>
+const Footer = () => (
+  <div className="flex">
+    <YakuzaText />
+    <div className="w-1/2">
+      <FancyBarText />
     </div>
-    <FancyBarText />
   </div>
 );
 

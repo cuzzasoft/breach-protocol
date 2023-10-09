@@ -1,7 +1,15 @@
 import { BreachTime } from './breach-time';
 import { Buffer, BufferHeading } from './buffer';
 import { CodeMatrix } from './code-matrix';
+import { YakuzaText } from './components';
 import { Sequence } from './sequence';
+
+const Footer = () => (
+  <div className="flex">
+    <YakuzaText />
+    <div className="w-1/2"></div>
+  </div>
+);
 
 const App = () => {
   return (
@@ -37,6 +45,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
