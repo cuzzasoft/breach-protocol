@@ -11,3 +11,12 @@ export const MiniParagraph = () => {
     </div>
   );
 };
+
+export const FancyBarText = () => (
+  <div className="w-1/2 columns-1 pt-0.5 text-right">
+    <span className="bg-cp-yellow text-cp-border opacity-90">
+      AI prototype Sprawl
+    </span>
+    <div className="pr-1">リー トハ ッ カー</div>
+  </div>
+);

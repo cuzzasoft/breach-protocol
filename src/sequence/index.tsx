@@ -5,7 +5,7 @@ import expert from './expert.png';
 import { GridBox } from '../grid';
 import { generateOptions } from '../options';
 import { HTMLProps } from 'react';
-import { MiniParagraph } from '../components';
+import { FancyBarText, MiniParagraph } from '../components';
 
 const Upload = ({
   size,
@@ -32,36 +32,59 @@ const Upload = ({
   </div>
 );
 
-export const Sequence = () => (
-  <div className="relative rounded-tl-lg border border-cp-border">
-    <div className="flex flex-grow items-center border-b border-cp-border pl-2 pt-1">
-      <div className="flex w-1/2">
-        <img className="h-6 w-6" src={icon} alt="Sequence logo" />
-        <h3 className="py-0 uppercase">Sequence required to upload</h3>
-      </div>
-      <div className="w-1/4 self-end pb-0.5 text-right text-[4px] uppercase leading-[0.3rem]">
-        <span className="text-right">Spacial jack</span>
-        <span className="inline-block text-left indent-2">Harajuku</span>
-      </div>
-      <MiniParagraph />
+const Header = () => (
+  <div className="flex flex-grow items-center border-b border-cp-border pl-2 pt-1">
+    <div className="flex w-1/2">
+      <img className="h-6 w-6" src={icon} alt="Sequence logo" />
+      <h3 className="py-0 uppercase">Sequence required to upload</h3>
     </div>
-    <Upload
-      size={2}
-      name="Basic datamine"
-      description="Extract eurodollars"
-      img={basic}
-    />
-    <Upload
-      size={3}
-      name="Advanced datamine"
-      description="Extact eurdollars and quickhack crafting components"
-      img={advanced}
-    />
-    <Upload
-      size={4}
-      name="Expert datamine"
-      description="Extract quickhands and quickhand crafting specs"
-      img={expert}
-    />
+    <div className="w-1/4 self-end pb-0.5 text-right text-[4px] uppercase leading-[0.3rem]">
+      <span className="text-right">Spacial jack</span>
+      <span className="inline-block text-left indent-2">Harajuku</span>
+    </div>
+    <MiniParagraph />
+  </div>
+);
+
+export const Footer = () => (
+  <div className="flex text-[4px] uppercase leading-[0.3rem] text-cp-yellow">
+    <div className="w-1/2 pt-1 text-left">
+      <p>
+        Crack infrastructure fletcher construct précis socket hypnagogic trodes
+      </p>
+      <p>
+        implant chip deck Yakuza. Graphic cybernetic arcology circuitry fletcher
+        consortium
+      </p>
+      <p>corporate-grade flatline</p>
+    </div>
+    <FancyBarText />
+  </div>
+);
+
+export const Sequence = () => (
+  <div>
+    <div className="relative rounded-tl-lg border border-cp-border">
+      <Header />
+      <Upload
+        size={2}
+        name="Basic datamine"
+        description="Extract eurodollars"
+        img={basic}
+      />
+      <Upload
+        size={3}
+        name="Advanced datamine"
+        description="Extact eurdollars and quickhack crafting components"
+        img={advanced}
+      />
+      <Upload
+        size={4}
+        name="Expert datamine"
+        description="Extract quickhands and quickhand crafting specs"
+        img={expert}
+      />
+    </div>
+    <Footer />
   </div>
 );
