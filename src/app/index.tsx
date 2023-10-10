@@ -45,8 +45,37 @@ const Header = () => (
 
 const Footer = () => (
   <div className="flex">
-    <YakuzaText />
-    <div className="w-1/2"></div>
+    <div className="w-1/3">
+      <YakuzaText />
+    </div>
+    <div className="w-1/3"></div>
+    <div className="w-1/3">
+      <div className="flex h-1/3 border-x border-b border-cp-border text-left text-[5px]  uppercase leading-[0.3rem] text-cp-yellow">
+        <div className="flex w-1/5">
+          <span className="inline-block w-2 bg-cp-yellow"></span>
+          <span className="pl-0.5 pt-[1px]">0 0 0</span>
+          <span className="pl-0.5 pt-[1px] indent-0.5">0 0</span>
+        </div>
+        <div className="flex w-2/5">
+          <span className="inline-block h-3/4 w-2 bg-cp-yellow"></span>
+          <span className="pl-1 pt-[1px] text-[4px] uppercase">
+            mirror madness img from blackwall . 45986 12094
+          </span>
+        </div>
+        <div className="flex w-3/5 pt-0">
+          <span className="w-3/5 pl-0.5 pr-0.5 text-right tracking-[0.2em]">
+            2000 - 358305 - 20000005 . MTM
+          </span>
+          <div className="flex w-1/5">
+            <span className="inline-block w-2 bg-cp-yellow"></span>
+            <span className="pl-0.5">0 4 . 3 %</span>
+          </div>
+          <div className="flex w-1/5 items-center">
+            <hr className="border-1 w-full border-t border-cp-border" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
@@ -54,7 +83,7 @@ export const App = () => {
   return (
     <div className="min-h-screen bg-cp-bg p-12 text-center font-blender text-lg font-thin text-cp-text">
       <Header />
-      <div className="border-2 border-cp-border px-1">
+      <div className="border border-cp-border border-x-cp-yellow border-b-cp-yellow px-1">
         <div className="border-x border-cp-border px-2">
           <div className="border-x border-cp-border px-4">
             <div className="border-x border-cp-border px-4 pb-4">
