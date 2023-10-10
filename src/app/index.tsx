@@ -48,32 +48,52 @@ const Footer = () => (
     <div className="w-1/3">
       <YakuzaText />
     </div>
-    <div className="w-1/3"></div>
-    <div className="w-1/3">
-      <div className="flex h-1/3 border-x border-b border-cp-border text-left text-[5px]  uppercase leading-[0.3rem] text-cp-yellow">
+    <div className="flex w-1/3">
+      <span className="ml-auto inline-block h-1/3 w-2 bg-cp-yellow"></span>
+    </div>
+    <div className="w-1/3 pl-0.5 text-[5px] uppercase leading-[0.3rem]">
+      <div className="flex h-1/3 border-x border-b border-cp-border text-left">
         <div className="flex w-1/5">
-          <span className="inline-block w-2 bg-cp-yellow"></span>
-          <span className="pl-0.5 pt-[1px]">0 0 0</span>
+          <span className="pl-0.5 pt-[1px] text-[8px]">0 0 0</span>
           <span className="pl-0.5 pt-[1px] indent-0.5">0 0</span>
         </div>
         <div className="flex w-2/5">
-          <span className="inline-block h-3/4 w-2 bg-cp-yellow"></span>
-          <span className="pl-1 pt-[1px] text-[4px] uppercase">
+          <span className="h-3/4 w-2 bg-cp-yellow"></span>
+          <span className="pl-1 pt-[1px]">
             mirror madness img from blackwall . 45986 12094
           </span>
         </div>
         <div className="flex w-3/5 pt-0">
-          <span className="w-3/5 pl-0.5 pr-0.5 text-right tracking-[0.2em]">
+          <span className="w-3/5 pl-0.5 pr-0.5 text-right text-[8px]">
             2000 - 358305 - 20000005 . MTM
           </span>
-          <div className="flex w-1/5">
-            <span className="inline-block w-2 bg-cp-yellow"></span>
-            <span className="pl-0.5">0 4 . 3 %</span>
+          <div className="flex">
+            <span className="ml-auto inline-block w-2 bg-cp-yellow"></span>
+            <span className="pl-0.5 text-[8px]">0 4 . 3 %</span>
           </div>
-          <div className="flex w-1/5 items-center">
+          <div className="flex w-1/5 grow items-center px-0.5">
             <hr className="border-1 w-full border-t border-cp-border" />
           </div>
         </div>
+      </div>
+      <div className="text-left] flex h-1 tracking-[0.1em]">
+        <div className="flex w-1/2">
+          <span className="w-3.5 border-x border-cp-border">pow</span>
+          <span className="tracking-[0.2em]">
+            ered by militech.co generation v
+          </span>
+          <div className="ml-2 h-3/4 w-20 bg-cp-yellow"></div>
+        </div>
+        <div className="w-1/2 pr-2 text-right tracking-[0.2em]">
+          <span className="mr-1 inline-block h-full w-6 border border-cp-border"></span>
+          <span className="bg-colorborder w-4 border-cp-yellow"></span>
+          Virus virus flat-out microprocessor neon hardwired h
+        </div>
+        <div className="w-2 border border-cp-border"></div>
+      </div>
+      <div className="flex h-1">
+        <div className="w-3.5 border border-cp-border"></div>
+        <div className="w-full border-x border-b border-cp-border"></div>
       </div>
     </div>
   </div>
