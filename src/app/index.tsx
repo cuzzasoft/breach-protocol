@@ -101,7 +101,7 @@ const Footer = () => (
 
 export const App = () => {
   return (
-    <div className="min-h-screen bg-cp-bg p-12 text-center font-blender text-lg font-thin text-cp-text">
+    <div className="min-h-screen cursor-default bg-cp-bg p-12 text-center font-blender text-lg font-thin text-cp-text">
       <Header />
       <div className="border border-cp-border border-x-cp-yellow border-b-cp-yellow px-1">
         <div className="border-x border-cp-border px-2">

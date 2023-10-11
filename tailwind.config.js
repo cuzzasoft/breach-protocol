@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         blender: ['Blender Pro'],
       },
+      cursor: {
+        default: 'url(./assets/cursor.svg), default',
+      },
       colors: {
         'cp-text': '#CDD788',
         'cp-overlay': '#5FA5A9',
