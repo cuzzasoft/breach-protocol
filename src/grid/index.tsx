@@ -1,13 +1,15 @@
+import { HTMLProps } from 'react';
+
 export const GridBox = ({
   options,
-  border,
+  className,
 }: {
   options: string[];
-  border?: string;
+  className?: HTMLProps<HTMLElement>['className'];
 }) => (
   <div className="grid w-48 grid-cols-5 gap-2 p-2">
     {options.map((o, i) => (
-      <div className={`${border}`} key={i}>
+      <div className={className} key={i}>
         {o}
       </div>
     ))}

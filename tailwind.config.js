@@ -3,11 +3,20 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      animation: {
+        'side-scroll': 'sideScroll 30s linear infinite',
+      },
+      keyframes: {
+        sideScroll: {
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+      },
       fontFamily: {
         blender: ['Blender Pro'],
       },
       cursor: {
-        default: 'url(./assets/cursor.svg), default',
+        default: 'url(./assets/cursor.svg) 11 11, default',
       },
       colors: {
         'cp-text': '#CDD788',

@@ -9,7 +9,7 @@ export const Buffer = () => {
       <div className="inline-flex border-[1.5px] border-cp-yellow border-opacity-50">
         <GridBox
           options={buffer}
-          border="border border-cp-border border-dashed"
+          className="border border-dashed border-cp-border"
         />
       </div>
     </div>
