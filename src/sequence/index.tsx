@@ -31,6 +31,7 @@ const Upload = ({
         <div className="overflow-hidden whitespace-nowrap">
           <div className="w-full">
             <div
+              style={{ animationDelay: '2000ms' }}
               className={`${scrolling && 'animate-side-scroll'} leading-[1rem]`}
             >
               {description}
@@ -78,7 +79,7 @@ export const Sequence = () => (
       <Upload
         size={3}
         name="Advanced datamine"
-        description="Extact eurdollars and quickhack crafting components"
+        description="Extract eurdollars and quickhack crafting components"
         scrolling
         img={advanced}
       />
