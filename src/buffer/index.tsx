@@ -1,16 +1,21 @@
 import { useState } from 'react';
-import { GridBox } from '../grid';
 
-export const Buffer = () => {
-  const [buffer] = useState(Array(5).fill(`\u00A0`));
+export const Buffer = ({ size = 7 }: { size?: number }) => {
+  const [buffer] = useState(Array(size).fill(`\u00A0`));
 
   return (
     <div className="text-left">
-      <div className="inline-flex border-[1.5px] border-cp-yellow border-opacity-50">
-        <GridBox
-          options={buffer}
-          className="border border-dashed border-cp-border"
-        />
+      <div className="inline-flex border-[1.5px] border-cp-yellow border-opacity-50 bg-cp-bg">
+        <div className="flex h-12 content-around gap-2 p-2">
+          {buffer.map((o, i) => (
+            <div
+              className="h-6 w-6 self-center border border-dashed border-cp-border"
+              key={i}
+            >
+              {o}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
